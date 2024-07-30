@@ -1,0 +1,188 @@
+/* @import url('https://fonts.cdnfonts.com/css/poppins'); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  /* color: #333;
+  background-color: #e9c46a; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; /* centrat horitzontal */
+  padding: 0 30px;
+}
+
+
+header img {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: #fff;
+  /* color: #000; */
+  height: 60px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar .active {
+  border-bottom: 10px solid gray;
+}
+
+/* implementem flexbox, ho fem a .container i no a .navbar ja que dins de .container hi tenim els flex-items*/
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* main axis, horitzontal per defecte */
+  align-items: center; /* cross axis: centrat verticalment*/
+  
+  /*Hem d'afegir un height perquè ens centri el text en el cross axis, ja que tenim definit el height en el .navbar i no teníem height en el container*/
+  height: 100%; 
+}
+
+/* ul és flex-item del flex-container*/
+.navbar ul {
+  display: flex; /* ens fa aparèixer els li horitzontals*/
+}
+
+.navbar ul li {
+  margin-right: 4em;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 500;
+  color: grey;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 40px auto;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 50px;
+  /* text-align: center;
+  margin: 40px auto; */
+}
+
+h1,
+h2 {
+  margin-bottom: 30px;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.accent {
+  background: linear-gradient(315deg,#42d392 25%,#647eff);
+  -webkit-background-clip: text;
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 10px;
+  /* max-width: 28em; */
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+/* recordem que .container té una max-width de 1100px per això no canvia el justify-content amb altres valors*/
+/* dins de .boxes tenim un flex-container amb 3 flex items (.box) */
+.boxes .container {
+  display: flex; /* alinea les caixes horitzontalment*/
+  justify-content: space-between; /* main axis */
+  /* align-items: center; */
+  gap: 50px;
+}
+
+.box {
+  flex: 1; /* Això és flex-grow = 1, flex-shrink = 0, height = 0*/
+  background-color: #7f7e7d;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  transition: transform .2s;
+}
+
+.box:hover {
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+}
+
+.box i {
+  margin-right: 10px;
+}
+
+.a-box {
+  text-decoration: none;
+}
+
+/* configuració per sota de 768px */
+@media(max-width: 768px) {
+  /* dues maneres diferents de fer el mateix, una per el header i l'altra per box*/
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}
+
+a.extern {
+  text-decoration: none;
+  color: coral;
+}
+a.extern:hover {
+  color: rgb(244, 78, 17);
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}

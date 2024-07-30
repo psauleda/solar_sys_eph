@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./scripts/moon.js" type="module"></script>
+  <title>Ephemerides de La Lluna</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
+  <link rel="stylesheet" href="./styles/estils.css">
+  <link rel="stylesheet" href="./styles/moon.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+<!-- Secció de capçalera, inclou imatge i navBar-->
+  <header>
+    <img src="./images/moon/moon.jpg" alt="SolarSystem">
+    <!-- Barra navegació -->
+    <nav class="navbar">
+
+      <!-- Container per aplicar flexbox horitzontal (flex-container)-->
+      <div class="container">
+    
+        <!-- flex-item links-->
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="solarsys.html">Una Ullada</a>
+          </li>
+          <li>
+            <a href="sun.html">El Sol</a>
+          </li>
+          <li>
+            <a href="#" class="active">La Lluna</a>
+          </li>
+          <li>
+            <a href="credits.html">Enllaços i credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="accent">Efemèrides de la Lluna</h1>
+    <p>Fases de la Lluna. Per defecte es mostra la fase de la Lluna actual i les fases de tot el més actual. Es pot triar una data per mostrar la fase d'una lluna en concret i es mostraran les fases de tots els dies del mes de la data escollida.</p>
+    <!-- Formulari data -->
+    <div>
+      <!-- Formulari de la data -->
+      <div class="date">
+        <form id="date-form">
+          <p><label for="date-input">Tria una data (per defecte avui):</label></p>
+          <p><input type="date" id="date-input" required>
+          <button type="submit" class="calc-button">Calcula</button></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Resultat del càlcul: cardfase de la Lluna -->
+    <div id="lluna" class="moon-result">
+      <div class="moon-card">
+        <p class="day-week">Dia de la setmana</p>
+        <p class="full-date">Data</p>
+        <div class="moon-image"></div>
+        <p class="moon-phase">Fase de la lluna</p>
+      </div>
+    </div>
+      
+    <div class="calendar-main">
+      <div class="title-calendar"></div>
+      <div class="names-days"></div>
+      <div class="moon-calendar"></div>
+    </div>
+  </div>
+  <!-- Footer-->
+  <footer>
+    <p>Projecte: Sistema Solar</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecte: Solar System</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
+  <link rel="stylesheet" href="./styles/estils.css">  
+  <!--font awesome cdn-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+  
+  <!-- capçalera, inclou imatge i navBar-->
+  <header>
+    <img src="./images/solar_system_llarg.jpg" alt="SolarSystem">
+    <!-- Barra navegació -->
+    <nav class="navbar">
+  
+      <!-- Container per aplicar flexbox horitzontal (flex-container)-->
+      <div class="container">
+    
+        <!-- flex-item links-->
+        <ul class="nav">
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="solarsys.html">Una Ullada</a>
+          </li>
+          <li>
+            <a href="sun.html">El Sol</a>
+          </li>
+          <li>
+            <a href="moon.html">La Lluna</a>
+          </li>
+          <li>
+            <a href="credits.html">Enllaços i credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Secció central: info -->
+  <section>
+    <!-- flex-container -->
+    <div class="container">
+      <!-- flex-item (h1 + p)-->
+      <div class="exercici">
+        <h1><span class="accent">Sistema Solar</span></h1>
+        <p>Petit exercici que mostra una ullada al Sistema Solar amb comparatives dels planetes i efemèrides solar i lunar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció de caixes, 3 en total-->
+  <div class="boxes">
+
+    <!-- flex-container amb 3 flex-items (3 box)-->
+    <div class="container">
+    
+      <!-- flex-item que també és flex-container, (conté 2 flex-items, h2 + p) -->
+      <div class="box">
+
+        <!-- flex-items -->
+        <img src="./images/solar-system_64.png" alt="icona solar system">
+        <h2>Ullada al Sistema Solar</h2>
+        <p>Planetes del Sistema Solar, amb les seves característiques i una comparativa de les seves mides.</p>
+    
+      </div>
+
+      <!-- flex-item que també és flex-container, (conté 2 flex-items, h2 + p) -->
+      <div class="box">
+
+        <!-- flex-items -->
+        <img src="./images/sun_64.png" alt="icona sol">
+        <h2> Efemèrides: el Sol</h2>
+        <p>Sortida, posta i altura del Sol a qualsevol lloc del planeta. Comparativa de l'altura màxima (migdia) del Sol al llarg de l'any.</p>
+    
+      </div>
+
+      <!-- flex-item que també és flex-container, (conté 2 flex-items, h2 + p) -->
+      <div class="box">
+
+        <!-- flex-item -->
+        <img src="./images/half-moon_64.png" alt="icona lluna">
+        <h2>Efemerides: la Lluna</h2>
+        <p>Fases lunars per una data i calendari amb totes les seves fases.</p>
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <footer>
+    <p>Projecte: Sistema Solar</p>
+  </footer>
+</body>
+</html>

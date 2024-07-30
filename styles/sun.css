@@ -1,0 +1,115 @@
+
+.search-results {
+  margin: 50px auto;
+  /* border: 2px solid darkgray;
+  border-radius: 8px; */
+  padding: 20px;
+}
+
+.location-result {
+  margin: 10px;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  /* padding: 5px 20px; */
+}
+
+.location-result:hover {
+  cursor: pointer;
+  background-color: rgb(145, 184, 235);
+}
+.location-name {
+  font-size:medium;
+  font-weight: 800;
+}
+
+.location-type {
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+.titol {
+  font-weight: 400;
+}
+
+.warning {
+  color: red;
+}
+
+button {
+  color: #000;
+  border: 2px solid darkgray;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.search-button:hover:enabled,
+.calc-button:hover:enabled{
+  color: #fff;
+  background-color: #42d392;
+  cursor: pointer;
+}
+
+
+input {
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  background-color: #f4f5f2e0;
+  border: 1.5px solid #42d392;
+} 
+
+#date-input {
+  font-family: inherit;
+}
+
+
+div.suns-result {
+  margin: 100px;
+}
+
+div.suns-result p{
+  text-align: center;
+}
+
+div.suns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+div.sunrise-sunset {
+  width: 250px;
+  background-color: #eee;
+  border-radius: 5%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+img.sun {
+  width: 100px;
+}
+
+
+.suns-container {
+  margin: 0 auto;
+  background-color: rgb(78, 166, 196);
+  margin-bottom: 100px;
+  display: block;
+}
+
+.all-year-suns {
+  margin: 0 auto;
+}

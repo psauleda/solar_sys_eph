@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
+  <title>Credits</title>
+  <link rel="stylesheet" href="./styles/estils.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+  <!-- Secció de capçalera, inclou imatge i navBar-->
+  <header>
+    <img src="./images/solar_system_llarg.jpg" alt="SolarSystem">
+    <!-- Barra navegació -->
+    <nav class="navbar">
+  
+      <!-- Container per aplicar flexbox horitzontal (flex-container)-->
+      <div class="container">
+    
+        <!-- flex-item links-->
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="solarsys.html">Una Ullada</a>
+          </li>
+          <li>
+            <a href="sun.html">El Sol</a>
+          </li>
+          <li>
+            <a href="moon.html">La Lluna</a>
+          </li>
+          <li>
+            <a href="#" class="active">Enllaços i credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Secció central: info -->
+  <section>
+    <!-- flex-container -->
+    <div class="container">
+      <!-- flex-item (h1 + p)-->
+      <div>
+        <h1 class="accent">Enllaços, recursos i credits</h1>
+        <p>Per fer aquest projecte s'han fet servir una sèrie de recursos que tot seguit s'anomenen.</p>
+        <h3>API's:</h3>
+        <ul>
+          <li>
+            <p><a class="extern" href="https://api.le-systeme-solaire.net/en/" target="_blank"> Solar System Open Data:</a> subministra gran quantitat de dades de centenars d'objectes del Sistema Solar. Per aquest projecte s'han desat dades en una variable, sense accedir amb cap query.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://nominatim.openstreetmap.org/ui/search.html" target="_blank"> Nominatim:</a> Open-source geocoding. Subministra dades d'una ubicació. En concret la fem servir per recuperar la latitud i longitud d'un lloc.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://ssp.imcce.fr/webservices/" target="_blank"> Solar System Portal:</a> Engloba varies API's que subministren gran quantitat d'informació astronòmica. Per aquest projecte s'ha fet servir la <a class="extern" href="https://ssp.imcce.fr/webservices/miriade/api/rts/" target="_blank">rst.</a></p>
+          </li>
+          <li>
+            <p><a class="extern" href="http://www.wdisseny.com/lluna/?lang=ca" target="_blank"> Fases de la Lluna:</a> Aquesta és una API singular. No té documentació però mostra 3 o 4 exemples del seu ús. Subministra dades i imatges (svg) de tot un mes.</p>
+          </li>
+        </ul>
+        <h3>Imatges:</h3>
+        <ul>
+          <li>
+            <p><a class="extern" href="https://solarsystem.nasa.gov/" target="_blank">NASA:</a> Imatges dels planetes.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://www.flaticon.com/" target="_blank">FlatIcon:</a> per algunes icones que es fan servir.</p>
+          </li>
+        </ul>
+        <h3>Documentació:</h3>
+        <ul>
+          <li>
+            <p><a class="extern" href="https://developer.mozilla.org/en-US/" target="_blank">MDN:</a> Documentació de referència de HTML, CSS i JavaScript.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://www.w3schools.com/" target="_blank">W3Schools:</a> Com l'anterior, però més encarat a tutorials.</p>
+          </li>
+        </ul>
+        <h3>Altres fonts i recursos:</h3>
+        <ul>
+          <li>
+            <p><a class="extern" href="https://solarsystem.nasa.gov/" target="_blank">Nasa:</a> Pàgina molt completa i complexa però un bon lloc d'on s'ha tret alguna idea.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://www.w3schools.com/howto/howto_js_slideshow.asp" target="_blank">Slideshow de W3Schools:</a> Adaptació de l'slideshow a la comparació dels planetes.</p>
+          </li>
+          <li>
+            <p><a class="extern" href="https://stackoverflow.com/" target="_blank">Stack overflow:</a> Recurs que soluciona molts problemes.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer>
+    <p>Projecte: Sistema Solar</p>
+  </footer>
+</body>
+</html>

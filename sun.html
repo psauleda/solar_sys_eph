@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./scripts/sun.js" type="module"></script>
+  <title>Efemèrides del Sol</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
+  <link rel="stylesheet" href="./styles/estils.css">
+  <link rel="stylesheet" href="./styles/sun.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+  <!-- Secció de capçalera, inclou imatge i navBar-->
+  <header>
+    <img src="./images/sun/sunrise.jpg" alt="SolarSystem">
+    <!-- Barra navegació -->
+    <nav class="navbar">
+  
+      <!-- Container per aplicar flexbox horitzontal (flex-container)-->
+      <div class="container">
+    
+        <!-- flex-item links-->
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="solarsys.html">Una Ullada</a>
+          </li>
+          <li>
+            <a href="#" class="active">El Sol</a>
+          </li>
+          <li>
+            <a href="moon.html">La Lluna</a>
+          </li>
+          <li>
+            <a href="credits.html">Enllaços i credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <h1 class="accent">Efemèrides del Sol</h1>
+    <p>Informació de la sortida i posta del Sol per un lloc concret i una data (avui per defecte)que cal introduir. També es mostra l'altura màxima del Sol (migdia). I finalment una comparativa d'aquesta altura respecte les altures màximes (migdies) al llarg de l'any.</p>
+    <p>Cal introduir primer de tot el lloc d'observació, ja sigui de l'historial si n'hi ha o bé cercant en el cap de text. Un cop triada la ubicació cal escollir una data que per defecte és l'actual. Clicant el botó de calcular obtenim els resultats. (Pot ser que aquests resultats triguin apareguin al cap d'un breu espai de temps).</p>
+    <!-- Formularis ubicació i data -->
+    <div>
+      <!-- Formulari de la ubicació -->
+      <div class="geo">
+        <form id="location-form">
+          <p><label for="location-input">Introdueix una ubicació (poble o ciutat) o bé un codi postal:</label></p>
+          <p><input type="text" id="location-input" autocomplete="off" required>
+          <button type="submit" class="search-button">Cerca</button></p>
+        </form>
+
+        <!-- Aquí mostrem info del lloc escollit -->
+        <div class="search-results"></div>
+
+      </div>
+
+      <!-- Formulari de la data -->
+      <div class="date">
+        <form id="date-form">
+          <p><label for="date-input">Tria una data (per defecte avui):</label></p>
+          <p><input type="date" id="date-input" required>
+          <button type="submit" class="calc-button">Calcula</button></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Resultat del càlcul: cards de la sortida, altura i posta del Sol -->
+    <div id="rst" class="suns-result"></div>
+      
+    <!-- Comparativa anual de l'altura del Sol -->
+    <!-- <div class="all-year-suns"> -->
+      <canvas id="canvas" class="suns-container" width="0" height="300"></canvas>
+    <!-- </div> -->
+  </div>
+<!-- Footer-->
+<footer>
+  <p>Projecte: Sistema Solar</p>
+</footer>
+
+  <!-- Templates -->
+  <!-- Template per les cards de la info de sortida, altura i posta de Sol -->
+  <template id="template-sun">
+    <div class="sunrise-sunset">
+      <img src=" --image url here-- " class="sun" alt=" --name here-- " />
+      <p class="sun-status">--status here--</p>
+      <p class="hour">--hour here--</p>
+      <p class="coord">--coord here--</p>
+    </div>
+  </template>
+
+</body>
+</html>

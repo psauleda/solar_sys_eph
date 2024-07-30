@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./scripts/solarsys.js" type="module"></script>
+  <title>Ullada al Sistema Solar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
+  <link rel="stylesheet" href="./styles/estils.css">
+  <link rel="stylesheet" href="./styles/solarsys.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+  <!-- Secció de capçalera, inclou imatge i navBar-->
+  <header>
+    <img src="./images/solar_system_llarg.jpg" alt="SolarSystem">
+    <!-- Barra navegació -->
+    <nav class="navbar">
+  
+      <!-- Container per aplicar flexbox horitzontal (flex-container)-->
+      <div class="container">
+    
+        <!-- flex-item links-->
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active">Una Ullada</a>
+          </li>
+          <li>
+            <a href="sun.html">El Sol</a>
+          </li>
+          <li>
+            <a href="moon.html">La Lluna</a>
+          </li>
+          <li>
+            <a href="credits.html">Enllaços i credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1  class="accent">Ullada al Sistema Solar</h1>
+    <p>Els Sistema Solar està format pel Sol, centre de gravetat i proveidor d'energia, lligat a ell té 8 planetes, alguns d'ells amb  satèl·lits, i milers d'altres astres com poden ser planetes nans (<em>dwarft planets</em>) entre ells Plutó que se'l va degradar a aquesta categoria, asteroides, cometes ... </p>
+    <p>Els planetes els podem dividir en planetes interns o rocosos i planetes externs o gasosos. Hi ha una separació física entre ells que és el cinturó d'asteroides, situat entre Mart i Júpiter.</p>
+    <p>Per veure algunes de les característiques físiques i una comparativa amb altres planetes, cal escollir un dels planetes i clicar el botó de comparar.</p>
+    <div class="inner-planets">
+      <h2 class="planets">Planetes interns o rocosos</h2>
+      <div class="inner-container">
+        
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/mercury_320x240.jpg" alt="Mercuri">
+          <div class="planet-name">Mercuri</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/venus_320x240.jpg" alt="Venus">
+          <div class="planet-name">Venus</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+  
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/earth_320x240.jpg" alt="Terra">
+          <div class="planet-name">Terra</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+  
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/mars_320x240.jpg" alt="Mart">
+          <div class="planet-name">Mart</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="external-planets">
+      <h2 class="planets">Planetes externs o gasosos</h2>
+      <div class="external-container">
+      
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/jupiter_320x240.jpg" alt="Júpiter">
+          <div class="planet-name">Júpiter</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/saturn_320x240.jpg" alt="Saturn">
+          <div class="planet-name">Saturn</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/uranus_320x240.jpg" alt="Urà">
+          <div class="planet-name">Urà</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+
+        <div class="planet-card">
+          <img class="image-card" src="./images/planets/neptune_320x240.jpg" alt="Neptú">
+          <div class="planet-name">Neptú</div>
+          <!-- <input class="button-comparar" type="button" value="Comparar Mida"> -->
+          <a href="#compare" class="button-comparar">Comparar</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="compare" class="comparison-container">
+    
+      <div class="reference-container"></div>
+      <div class="slides-container"></div>
+    </div>
+  </div>  
+  
+  <template id="planet-template">
+    <div class="Class names">
+      <img src="place URL-image" class="planet-img" alt="Planet name">
+      <p class="planet-name">Planet Name</p>
+      <p class="planet-radi">Radi</p>
+      <p class="planet-dist">Distància al Sol</p>
+      <p class="planet-dens">Densitat</p>
+      <p class="planet-g">Gravetat</p>
+    </div>
+  </template>
+
+  <!-- Footer-->
+  <footer>
+    <p>Projecte: Sistema Solar</p>
+  </footer>
+</body>
+</html>
